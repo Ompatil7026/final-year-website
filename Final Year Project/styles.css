@@ -1,0 +1,224 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+header {
+    background-color: #3b9f9f;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 80px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+    margin-left: 60px;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Golden color on hover */
+}
+
+#hero {
+    background-color: #5bc0be;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero form {
+    margin-top: 1.5rem;
+}
+
+#hero input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    width: 60%;
+    font-size: 1rem;
+    margin-left: 180px;
+}
+
+#hero button {
+    padding: 0.5rem 1rem;
+    background-color: #2a8c8c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 60%;
+    margin-left: 180px;
+    border-radius: 5px;
+}
+
+#specialists {
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+#specialists h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Carousel Styling */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.carousel-item {
+    width: 300px;
+    margin: 0 15px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Using CSS animations to create a "slide" effect */
+/* @keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} */
+
+.carousel {
+    animation: slide 9s infinite;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.carousel-item p {
+    color: #777;
+}
+
+footer {
+    background-color: #3b9f9f;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+text {
+    margin-left: 70px;
+    margin-top: 10px;
+    font-style: normal;
+    color: red;
+
+}
+
+/* Contact Form Styles */
+#contact {
+    background-color: #f4f7fa;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#contact p {
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #3b9f9f;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a8c8c;
+}
+
